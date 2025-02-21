@@ -46,9 +46,8 @@ function Banner() {
     setIndex((prev) => (prev === 0 ? texts.length - 1 : prev - 1));
   };
 
-  // Auto-scroll every 3 seconds
   useEffect(() => {
-    const interval = setInterval(nextSlide, 3000);
+    const interval = setInterval(nextSlide, 7500);
     return () => clearInterval(interval);
   });
 
